@@ -1,5 +1,6 @@
 import math
 
+#Class to determine whether pokemon was hit, close, or miss using distance and health of pokemon
 class SunMoon(object):
     def __init__(self, pokemon):
         self.n = pokemon[0]
@@ -16,9 +17,9 @@ class SunMoon(object):
         else:
             return 'miss'
 
+#Reads file containing pokemon location
 pokefile = input('File name => ')
 print(pokefile)
-
 file = open(pokefile, 'r')
 pokenum = int(file.readline().strip())
 
